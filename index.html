@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="survey-cont">
+      <span class="load">
+        <span class="circle hide"></span>
+      </span>
+      <h1 id="thanks" class="hide">Thank you for taking this survey!</h1>
+      <header class="header">
+        <img
+          class="logo"
+          src="https://www.svgrepo.com/show/13601/university-musem.svg"
+          alt="logouniversity"
+        />
+        <h1>HEADLANDS UNIVERSITY</h1>
+
+        <h2 id="title">Student Satisfaction Survey</h2>
+        <p id="description">
+          Please provide some thoughts on your experiences as a student at our
+          university
+        </p>
+      </header>
+
+      <section class="container">
+        <form class="survey-form" onsubmit="return false">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >When do you expect to graduate?</label
+            >
+            <input
+              id="number"
+              type="number"
+              min="2019"
+              max="2100"
+              placeholder="Year"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="course-label" for="course">What is your course?</label>
+            <input
+              id="course"
+              type="text"
+              placeholder="Enter your course"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="dropdown">University Branch:</label>
+            <select id="dropdown">
+              <option value="tavice">Tavice South</option>
+              <option value="dia-buen">Dia Buen</option>
+              <option value="morita">Morita North</option>
+              <option value="bluehills">Bluehills</option>
+              <option value="aft-avenue">Aft Avenue</option>
+              <option value="birchland">Birchland</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>How effective was the teaching within your school?</p>
+
+            <label for="very-eff1">
+              <input
+                id="very-eff1"
+                class="button-radio"
+                type="radio"
+                name="question 1"
+                value="Very Effective"
+              />
+              Very effective </label
+            ><br />
+
+            <label for="eff1">
+              <input
+                id="eff1"
+                class="button-radio"
+                type="radio"
+                name="question 1"
+                value="Effective"
+              />
+              Effective </label
+            ><br />
+
+            <label for="mod-eff1">
+              <input
+                id="mod-eff1"
+                class="button-radio"
+                type="radio"
+                name="question 1"
+                value="Moderately effective"
+              />
+              Moderately effective </label
+            ><br />
+
+            <label for="not-eff1">
+              <input
+                id="not-eff1"
+                class="button-radio"
+                type="radio"
+                name="question 1"
+                value="Not effective"
+              />
+              Not effective
+            </label>
+          </div>
+          <div class="form-group">
+            <p>How effective was the teaching outside your school?</p>
+
+            <label for="very-eff2">
+              <input
+                id="very-eff2"
+                class="button-radio"
+                type="radio"
+                name="question 2"
+                value="Very Effective"
+              />
+              Very effective </label
+            ><br />
+
+            <label for="eff2">
+              <input
+                id="eff2"
+                class="button-radio"
+                type="radio"
+                name="question 2"
+                value="Effective"
+              />
+              Effective </label
+            ><br />
+
+            <label for="mod-eff2">
+              <input
+                id="mod-eff2"
+                class="button-radio"
+                type="radio"
+                name="question 2"
+                value="Moderately effective"
+              />
+              Moderately effective </label
+            ><br />
+
+            <label for="not-eff2">
+              <input
+                id="not-eff2"
+                class="button-radio"
+                type="radio"
+                name="question 2"
+                value="Not effective"
+              />
+              Not effective
+            </label>
+          </div>
+          <div class="form-group">
+            <p>How helpful is your academic advisor?</p>
+
+            <label for="very-eff3">
+              <input
+                id="very-eff3"
+                class="button-radio"
+                type="radio"
+                name="question 3"
+                value="Very Effective"
+              />
+              Very effective </label
+            ><br />
+
+            <label for="eff3">
+              <input
+                id="eff3"
+                class="button-radio"
+                type="radio"
+                name="question 3"
+                value="Effective"
+              />
+              Effective </label
+            ><br />
+
+            <label for="mod-eff3">
+              <input
+                id="mod-eff3"
+                class="button-radio"
+                type="radio"
+                name="question 3"
+                value="Moderately effective"
+              />
+              Moderately effective </label
+            ><br />
+
+            <label for="not-eff3">
+              <input
+                id="not-eff3"
+                class="button-radio"
+                type="radio"
+                name="question 3"
+                value="Not effective"
+              />
+              Not effective
+            </label>
+          </div>
+          <div class="form-group">
+            <p>How easy is it to register for courses at this university?</p>
+
+            <label for="very-easy4">
+              <input
+                id="very-easy4"
+                class="button-radio"
+                type="radio"
+                name="question 4"
+                value="Very easy"
+              />
+              Very easy </label
+            ><br />
+
+            <label for="easy4">
+              <input
+                id="easy4"
+                class="button-radio"
+                type="radio"
+                name="question 4"
+                value="Easy"
+              />
+              Easy </label
+            ><br />
+
+            <label for="mod-easy4">
+              <input
+                id="mod-easy4"
+                class="button-radio"
+                type="radio"
+                name="question 4"
+                value="Moderately easy"
+              />
+              Moderately easy </label
+            ><br />
+
+            <label for="not-so-easy4">
+              <input
+                id="not-so-easy4"
+                class="button-radio"
+                type="radio"
+                name="question 4"
+                value="Not so easy"
+              />
+              Not so easy </label
+            ><br />
+
+            <label for="difficult4">
+              <input
+                id="difficult4"
+                class="button-radio"
+                type="radio"
+                name="question 4"
+                value="Difficult"
+              />
+              Difficult
+            </label>
+          </div>
+          <div class="form-group">
+            <p>How safe do you feel on campus?</p>
+
+            <label for="very-safe">
+              <input
+                id="very-safe"
+                class="button-radio"
+                type="radio"
+                name="question 5"
+                value="Very safe"
+              />
+              Very safe </label
+            ><br />
+            <label for="somewhat-safe">
+              <input
+                id="somewhat-safe"
+                class="button-radio"
+                type="radio"
+                name="question 5"
+                value="Somewhat safe"
+              />
+              Somewhat safe </label
+            ><br />
+            <label for="not-to-safe">
+              <input
+                id="not-to-safe"
+                class="button-radio"
+                type="radio"
+                name="question 5"
+                value="Not to safe"
+              />
+              Not to safe </label
+            ><br />
+            <label for="not-safe-at-all">
+              <input
+                id="not-safe-at-all"
+                class="button-radio"
+                type="radio"
+                name="question 5"
+                value="Not safe at all"
+              />
+              Not safe at all
+            </label>
+          </div>
+          <div class="form-group">
+            <p>How likely are you to recommend this university to others?</p>
+
+            <label for="extreme-likely">
+              <input
+                id="extreme-likely"
+                class="button-radio"
+                type="radio"
+                name="question6"
+                value="Extreme likely"
+              />
+              Extreme likely </label
+            ><br />
+            <label for="very-likely">
+              <input
+                id="very-likely"
+                class="button-radio"
+                type="radio"
+                name="question6"
+                value="Very likely"
+              />
+              Very likely </label
+            ><br />
+            <label for="somewhat-likely">
+              <input
+                id="somewhat-likely"
+                class="button-radio"
+                type="radio"
+                name="question6"
+                value="Somewhat likely"
+              />
+              Somewhat likely </label
+            ><br />
+            <label for="not-likely">
+              <input
+                id="not-likely"
+                class="button-radio"
+                type="radio"
+                name="question6"
+                value="Not likely"
+              />
+              Not likely </label
+            ><br />
+          </div>
+          <div class="form-group">
+            <p>Select what do you wish to improve more inside the campus:</p>
+
+            <label for="library">
+              <input
+                id="library"
+                class="button-radio"
+                type="checkbox"
+                name="need improvement"
+                value="Library"
+              />
+              Library </label
+            ><br />
+            <label for="cafeteria">
+              <input
+                id="cafeteria"
+                class="button-radio"
+                type="checkbox"
+                name="need improvement"
+                value="Cafeteria"
+              />
+              Cafeteria </label
+            ><br />
+            <label for="laboratories">
+              <input
+                id="laboratories"
+                class="button-radio"
+                type="checkbox"
+                name="need improvement"
+                value="Laboratories"
+              />
+              Laboratories </label
+            ><br />
+            <label for="comfort">
+              <input
+                id="comfort"
+                class="button-radio"
+                type="checkbox"
+                name="need improvement"
+                value="Comfort Rooms"
+              />
+              Comfort Rooms </label
+            ><br />
+            <label for="classroom">
+              <input
+                id="classroom"
+                class="button-radio"
+                type="checkbox"
+                name="need improvement"
+                value="Classrooms"
+              />
+              Classrooms </label
+            ><br />
+            <label for="faculty">
+              <input
+                id="faculty"
+                class="button-radio"
+                type="checkbox"
+                name="need improvement"
+                value="Faculty Rooms"
+              />
+              Faculty Rooms </label
+            ><br />
+            <label for="gym">
+              <input
+                id="gym"
+                class="button-radio"
+                type="checkbox"
+                name="need improvement"
+                value="Gym"
+              />
+              Gym </label
+            ><br />
+            <label for="auditorium">
+              <input
+                id="auditorium"
+                class="button-radio"
+                type="checkbox"
+                name="need improvement"
+                value="Auditorium"
+              />
+              Auditorium </label
+            ><br />
+          </div>
+          <div class="form-group">
+            <p>Any comments and other suggestions?</p>
+            <textarea
+              id="suggest"
+              placeholder="Tell us your thoughts here!"
+              name="comment"
+            ></textarea>
+          </div>
+
+          <input type="submit" class="submit" id="submit" value="Submit" />
+        </form>
+      </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
