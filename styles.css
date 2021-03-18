@@ -1,0 +1,128 @@
+.container {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.dice-cont{
+  display: flex;
+}
+
+.dice {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+body {
+  background-color: #8db596;
+  
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Bungee Inline', cursive;
+  text-shadow: 7px 0 #222831;
+  font-size: 7rem;
+  color: #c05555;
+}
+
+p {
+  font-size: 3rem;
+  color: #222831;
+  font-family: 'Bangers', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+.btn {
+  margin: 50px auto;
+
+}
+
+.btn-itself {
+  color: #222831;
+  height: 60px;
+  width: 150px;
+  background-color: #f4c983;
+  border-radius: 10px;
+  font-family: 'Bangers', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.btn-itself:hover{
+  background-color: #222831;
+  color: #f4c983;
+}
+
+@media (max-width:900px){
+  h1{
+    font-size: 6rem;
+  }
+  .dice{
+    width: 200px;
+  }
+  p{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:650px){
+  h1{
+    font-size: 4rem;
+  }
+  p{
+    font-size: 1.7rem;
+  }
+  .dice-cont{
+   flex-direction: column;
+  }
+}
+
+.spin{
+  animation: spinning 1s infinite;
+}
+
+.appear{
+  animation: appear 0.5s linear forwards;
+}
+
+@keyframes spinning{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(1800deg);
+  }
+  100%{
+    transform: rotate(3600deg);
+  }
+}
+@keyframes appear{
+  0%{
+    transform: scale(0) rotate(0);
+  }
+  25%{
+    transform: scale(0.25) rotate(90deg);
+  }
+  50%{
+    transform: scale(0.35) rotate(180deg);
+  }
+  75%{
+    transform: scale(0.45) rotate(275deg);
+  }
+  100%{
+    transform: scale(1) rotate(360deg);
+  }
+}
